@@ -1,0 +1,23 @@
+$xs: 320px;
+$sm: 375px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1320px;
+
+@mixin largerThan ($point) {
+  @media (min-width: $point) {
+    @content;
+  }
+}
+
+@mixin smallerThan ($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+@mixin between ($start, $end) {
+  @media (min-width: $start) and (max-width: $end) {
+    @content;
+  }
+}

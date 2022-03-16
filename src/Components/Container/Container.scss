@@ -1,0 +1,16 @@
+@import '../../DS/breakpoints.scss';
+
+.container {
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include largerThan($lg) {
+    width: $lg;
+  }
+
+  &--full-width {
+    padding: 0;
+    width: 100%;
+  }
+}
