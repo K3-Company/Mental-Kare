@@ -19,6 +19,10 @@ const About = () => {
           <br/>
           <br/>
           3 - Criar um sistema nacional que interligue de pessoas que precisam de tratamento ou estão em busca com profissionais qualificados que podem auxiliar nesse momento
+          <br/>
+          <br/>
+          <br/>
+          <i>Este é um projeto OpenSource, caso deseje contribuir para o projeto <a href="https://github.com/K3-Company/Mental-Kare" target="_blank" rel="noreferrer">acesse este link para mais informações</a></i>
         </p>
       </>
     </Container>
