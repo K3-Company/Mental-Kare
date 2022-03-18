@@ -1,18 +1,18 @@
 import React, { ReactElement } from 'react';
 import './Container.scss';
 
-const ContainerClassName = 'container';
-
 export enum ETextAlign {
   LEFT = 'left',
   CENTER = 'center',
   RIGHT = 'right',
 };
 
-interface IContainer {
+export interface IContainer {
   children: ReactElement,
   textAlign: ETextAlign;
 }
+
+const ContainerClassName = 'container';
 
 const Container = (props: IContainer): ReactElement => {
   const { children, textAlign } = props;

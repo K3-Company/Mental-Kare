@@ -3,9 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
-
+import Header from './Components/Header';
 import routes from './routes';
 
 import './App.scss';
@@ -13,18 +12,7 @@ import './App.scss';
 function App() {
   return (
     <Router>
-      <img src="/mentalkare.png" alt="Mental Kare Logo" />
-      <ul>
-        {
-          routes.map((route) => {
-            return (
-              <li>
-                <Link to={route.path}>{route.name}</Link>
-              </li>
-            )
-          })
-        }
-      </ul>
+      <Header routes={routes} />
 
       {/*
         A <Switch> looks through all its children <Route>
@@ -35,9 +23,9 @@ function App() {
       */}
       <Routes>
         {
-          routes.map((route) => {
+          routes.map((route, i) => {
             return (
-              <Route path={route.path} element={route.page} />
+              <Route path={route.path} element={route.page} key={i} />
             )
           })
         }

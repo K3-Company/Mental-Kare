@@ -1,6 +1,5 @@
 import React from "react";
-
-import Container, { ETextAlign } from "../Components/Container/Container";
+import Container, { ETextAlign } from "../Components/Container";
 
 const About = () => {
   return (

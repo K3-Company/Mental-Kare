@@ -4,12 +4,12 @@ import About from './Pages/About';
 
 const routes = [
   {
-    name: 'Home',
+    name: 'Inicio',
     path: '/',
     page: <Home />,
   },
   {
-    name: 'About',
+    name: 'Sobre',
     path: '/about',
     page: <About />,
   },

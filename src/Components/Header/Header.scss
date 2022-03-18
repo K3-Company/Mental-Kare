@@ -1,0 +1,26 @@
+.header {
+  box-shadow: 2px 0 5px 3px rgba(#000, 0.2);
+
+  &__image {
+    display: inline-block;
+    width: 150px;
+  }
+
+  &__menu {
+    display: inline-block;
+    padding: 0;
+    margin: 25px 0;
+    vertical-align: top;
+
+    &__item {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    &__item__link {
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
