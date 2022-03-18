@@ -1,11 +1,6 @@
 import React, { ReactElement } from 'react';
+import { ETextAlign } from '../../Types';
 import './Container.scss';
-
-export enum ETextAlign {
-  LEFT = 'left',
-  CENTER = 'center',
-  RIGHT = 'right',
-};
 
 export interface IContainer {
   children: ReactElement,

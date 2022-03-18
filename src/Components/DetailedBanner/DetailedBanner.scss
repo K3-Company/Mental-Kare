@@ -1,0 +1,29 @@
+@import '../../DS/colors.scss';
+
+.detailed-banner {
+  display: block;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 3px rgba($color-light-black, 0.4);
+
+  &--with-background {
+    padding-top: 200px;
+    background-size: cover;
+  }
+
+  &--has-link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__title {
+    color: $color-light-black;
+    font-size: 24px;
+  }
+
+  &__description {
+    color: $color-light-black;
+    font-size: 14px;
+  }
+}

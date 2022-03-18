@@ -1,10 +1,19 @@
 import React from "react";
-import Container, { ETextAlign } from "../Components/Container";
+import { ETextAlign } from '../Types';
+import Container from "../Components/Container";
+import DetailedBanner from "../Components/DetailedBanner";
 
 const Home = () => {
   return (
     <Container textAlign={ETextAlign.CENTER}>
-      <h1>Home</h1>
+      <DetailedBanner
+        title="Entenda sobre o projeto"
+        description="O Mental Kare é um Hub ..."
+        image="/img/sobre.jpg"
+        textAlign={ETextAlign.LEFT}
+        link="/about"
+        internLink
+      />
     </Container>
   )
 }

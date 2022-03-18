@@ -1,5 +1,9 @@
+@import '../../DS/breakpoints.scss';
+@import '../../DS/colors.scss';
+
 .header {
-  box-shadow: 2px 0 5px 3px rgba(#000, 0.2);
+  box-shadow: 0 2px 5px 3px rgba(#000, 0.2);
+  background-color: $color-light-gray;
 
   &__image {
     display: inline-block;
@@ -11,6 +15,10 @@
     padding: 0;
     margin: 25px 0;
     vertical-align: top;
+
+    @include smallerThan($md) {
+      width: 100%;
+    }
 
     &__item {
       display: inline-block;

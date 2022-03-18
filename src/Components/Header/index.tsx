@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from "react-router-dom";
-import Container, { ETextAlign } from '../Container';
+import { ETextAlign } from '../../Types';
+import Container from '../Container';
 import './Header.scss';
 
 export interface IRoutes {
@@ -27,7 +28,7 @@ const Header = (props: IHeader): ReactElement => {
     <div
       className={HeaderClassName}
     >
-      <Container textAlign={ETextAlign.LEFT}>
+      <Container textAlign={ETextAlign.CENTER}>
         <>
           <Link to="/">
             <img className={HeaderImageClassName} src="/mentalkare.png" alt="Mental Kare Logo" />
