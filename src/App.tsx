@@ -7,6 +7,7 @@ import {
 import Header from './Components/Header';
 import routes from './routes';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 
 function App() {

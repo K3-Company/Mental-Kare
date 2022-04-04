@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from "react-router-dom";
 import { ETextAlign } from '../../Types';
-import Container from '../Container';
+import { Col, Container, Row } from "react-bootstrap";
 import './Header.scss';
 
 export interface IRoutes {
@@ -28,23 +28,25 @@ const Header = (props: IHeader): ReactElement => {
     <div
       className={HeaderClassName}
     >
-      <Container textAlign={ETextAlign.CENTER}>
-        <>
-          <Link to="/">
-            <img className={HeaderImageClassName} src="/mentalkare.png" alt="Mental Kare Logo" />
-          </Link>
-          <ul className={HeaderMenuClassName}>
-            {
-              routes.map((route: IRoutes, i) => {
-                return (
-                  <li className={HeaderMenuItemClassName} key={i}>
-                    <Link className={HeaderMenuItemLinkClassName} to={route.path}>{route.name}</Link>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </>
+      <Container>
+        <Row>
+          <Col className="">
+            <Link to="/">
+              <img className={HeaderImageClassName} src="/mentalkare.png" alt="Mental Kare Logo" />
+            </Link>
+            <ul className={HeaderMenuClassName}>
+              {
+                routes.map((route: IRoutes, i) => {
+                  return (
+                    <li className={HeaderMenuItemClassName} key={i}>
+                      <Link className={HeaderMenuItemLinkClassName} to={route.path}>{route.name}</Link>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </Col>
+        </Row>
       </Container>
     </div>
   )
