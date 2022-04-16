@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import { Link } from "react-router-dom";
-import { ETextAlign } from '../../Types';
 import { Col, Container, Row } from "react-bootstrap";
 import './Header.scss';
 

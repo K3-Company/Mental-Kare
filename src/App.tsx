@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 import routes from './routes';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,23 +16,20 @@ function App() {
     <div className="App">
       <Router>
         <Header routes={routes} />
+        
+        <main>
+          <Routes>
+            {
+              routes.map((route, i) => {
+                return (
+                  <Route path={route.path} element={route.page} key={i} />
+                )
+              })
+            }
+          </Routes>
+        </main>
 
-        {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-        <Routes>
-          {
-            routes.map((route, i) => {
-              return (
-                <Route path={route.path} element={route.page} key={i} />
-              )
-            })
-          }
-        </Routes>
+        <Footer routes={routes} />
       </Router>
     </div>
   );

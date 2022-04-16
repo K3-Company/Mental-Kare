@@ -1,11 +1,40 @@
 @import '../../DS/colors.scss';
 
-.detailed-banner {
+$detailed-banner-name: 'detailed-banner';
+
+.#{$detailed-banner-name} {
   display: block;
   margin: 10px 0;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px 3px rgba($color-light-black, 0.4);
+
+  &--dark {
+    .#{$detailed-banner-name}__info-container {
+      background-color: rgba(#2B5E47, 0.3);
+    }
+
+    .#{$detailed-banner-name}__title {
+      color: $color-light-black;
+    }
+
+    .#{$detailed-banner-name}__description {
+      color: $color-light-black;
+    }
+  }
+
+  &--light {
+    .#{$detailed-banner-name}__info-container {
+      background-color: rgba(#70283C, 0.4);
+    }
+
+    .#{$detailed-banner-name}__title {
+      color: $color-light-gray;
+    }
+
+    .#{$detailed-banner-name}__description {
+      color: $color-light-gray;
+    }
+  }
 
   &--with-background {
     padding-top: 200px;
@@ -17,13 +46,15 @@
     text-decoration: none;
   }
 
+  &__info-container {
+    padding: 20px;
+  }
+
   &__title {
-    color: $color-light-black;
     font-size: 24px;
   }
 
   &__description {
-    color: $color-light-black;
     font-size: 14px;
   }
 }
