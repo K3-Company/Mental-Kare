@@ -4,22 +4,9 @@ import DetailedBanner, { EMode } from "../Components/DetailedBanner";
 
 import { Col, Container, Row } from "react-bootstrap";
 
-const Home = () => {
+const Books = () => {
   return (
     <Container>
-      <Row>
-        <Col>
-          <DetailedBanner
-            mode={EMode.dark}
-            title="Entenda sobre o projeto"
-            description="O Mental Kare é uma iniciativa ..."
-            image="/img/sobre.jpg"
-            textAlign={ETextAlign.LEFT}
-            link="/about"
-            internLink
-          />
-        </Col>
-      </Row>
       <Row>
         <Col>
           <DetailedBanner
@@ -48,4 +35,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Books;
