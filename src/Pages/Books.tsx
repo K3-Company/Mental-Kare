@@ -1,6 +1,6 @@
-import React from "react";
-import { ETextAlign } from '../Types';
-import DetailedBanner, { EMode } from "../Components/DetailedBanner";
+import React, { ReactElement } from "react";
+import BookCard, { IBookCard } from "../Components/BookCard";
+import books from "../Data/Books";
 
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -8,28 +8,21 @@ const Books = () => {
   return (
     <Container>
       <Row>
-        <Col>
-          <DetailedBanner
-            mode={EMode.light}
-            title="Dicas de livros"
-            description="Sobre neurocompativel, montessori, TEA ..."
-            image="/img/books.png"
-            textAlign={ETextAlign.LEFT}
-            link="/books"
-            internLink
-          />
-        </Col>
-        <Col>
-          <DetailedBanner
-            mode={EMode.light}
-            title="Para seguir e se informar"
-            description="Perfis do intagram relevantes e ..."
-            image="/img/accounts.png"
-            textAlign={ETextAlign.LEFT}
-            link="/accounts"
-            internLink
-          />
-        </Col>
+        {books.map((props: IBookCard): ReactElement => {
+          const { id, image, title, author, buyLink, descr } = props;
+          return (
+            <Col key={id} xs={12} lg={6}>
+              <BookCard
+                id={id}
+                image={image}
+                title={title}
+                author={author}
+                buyLink={buyLink}
+                descr={descr}
+              />
+            </Col>
+          );
+        })}
       </Row>
     </Container>
   )

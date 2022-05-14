@@ -21,7 +21,7 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col xs={12} lg={6}>
           <DetailedBanner
             mode={EMode.light}
             title="Dicas de livros"
@@ -32,7 +32,7 @@ const Home = () => {
             internLink
           />
         </Col>
-        <Col>
+        <Col xs={12} lg={6}>
           <DetailedBanner
             mode={EMode.light}
             title="Para seguir e se informar"
