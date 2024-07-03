@@ -1,0 +1,10 @@
+@import '../../DS/colors.scss';
+@import '../../DS/buttons.scss';
+
+.accounts {
+  text-align: left;
+
+  &__column {
+    margin-bottom: 24px;
+  }
+}

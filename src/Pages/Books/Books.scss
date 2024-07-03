@@ -1,0 +1,10 @@
+@import '../../DS/colors.scss';
+@import '../../DS/buttons.scss';
+
+.books {
+  text-align: left;
+
+  &__column {
+    margin-bottom: 24px;
+  }
+}

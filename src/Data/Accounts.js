@@ -1,12 +1,25 @@
-const accounts = [
+const instagramProfiles = [
   {
-    id: "mentes-unicas",
-    image: "/img/books/mentes-unicas.png",
-    title: "MENTES ÚNICAS",
-    author: "LUCIANA BRITES, CLAY BRITES",
-    buyLink: "https://www.amazon.com.br/MENTES-%C3%9ANICAS-desenvolva-habilidades-impulsionando/dp/8545203071/ref=cm_cr_arp_d_product_top?ie=UTF8",
-    descr: "O autismo é um transtorno de desenvolvimento que afeta de maneira decisiva e predominante nossa capacidade de percepção social. Hoje, estima-se que aproximadamente 1% da população mundial tenha autismo...",
+    id: "equipenataliaocacia",
+    image: "/img/profiles/equipenataliaocacia.jpg",
+    title: "Equipe Natalia Ocacia",
+    instagram: "https://www.instagram.com/equipenataliaocacia",
+    descr: "🧠 Transdisciplinaridade"
   },
+  {
+    id: "neuroped.lourenamartins",
+    image: "/img/profiles/neuroped.lourenamartins.jpg",
+    title: "Lourena Martins | Médica Neuropediatra",
+    instagram: "https://www.instagram.com/neuroped.lourenamartins/",
+    descr: "🧩Guiando famílias com acolhimento e informações seguras sobre transtornos do neurodesenvolvimento"
+  },
+  {
+    id: "anabeatriz11",
+    image: "/img/profiles/anabeatriz11.jpg",
+    title: "Ana Beatriz Barbosa / PodPeople",
+    instagram: "https://www.instagram.com/anabeatriz11",
+    descr: "🧠 Psiquiatra 📚 Escritora e Palestrante"
+  }
 ];
 
-export default accounts;
+export default instagramProfiles;

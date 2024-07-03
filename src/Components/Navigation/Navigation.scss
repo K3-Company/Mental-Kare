@@ -1,0 +1,87 @@
+@import '../../DS/breakpoints.scss';
+@import '../../DS/colors.scss';
+
+.navigation {
+  position: relative;
+
+  &__menu-icon {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 24px 6px;
+
+    &__line {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      margin: 5px 0;
+    }
+  }
+
+  &__menu {
+    display: inline-block;
+    padding: 0;
+    margin: 25px 0;
+    vertical-align: top;
+    list-style: none;
+
+    @include smallerThan($md) {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      width: 250px;
+      height: 100vh;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+      padding: 20px;
+      margin: 0;
+      z-index: 1002;
+    }
+
+    &--open {
+      display: flex;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0 20px;
+
+      @include smallerThan($md) {
+        margin: 10px 0;
+      }
+    }
+
+    &__item__link {
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    @include smallerThan($md) {
+      display: block;
+    }
+  }
+
+  @include smallerThan($md) {
+    &__menu-icon {
+      display: block;
+    }
+  }
+}

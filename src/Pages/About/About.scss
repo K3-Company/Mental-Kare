@@ -1,0 +1,10 @@
+@import '../../DS/colors.scss';
+@import '../../DS/buttons.scss';
+
+.about {
+  text-align: left;
+
+  &__buy-link {
+    @extend .button-primary;
+  }
+}

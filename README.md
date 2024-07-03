@@ -1,48 +1,55 @@
 # Mental Kare
 
-## Base Styleguide
+## Sobre o Projeto
 
-https://reactstrap.github.io/
+Mental Kare é uma iniciativa sem fins lucrativos focada em saúde mental. Nosso objetivo é fornecer recursos de qualidade sobre saúde mental, incluindo TEA, TDAH, TOD e outros, além de oferecer suporte a famílias e criar um sistema que conecte pessoas necessitadas com profissionais qualificados.
 
-## Available Scripts
+### Objetivos Principais
 
-In the project directory, you can run:
+1. **Agregar Conteúdo de Qualidade**: Disponibilizar artigos científicos, perfis, vídeos, podcasts e livros sobre saúde mental.
+2. **Auxiliar Famílias**: Oferecer suporte e direcionamento para famílias que precisam de ajuda.
+3. **Conectar Pessoas e Profissionais**: Criar um sistema para interligar pessoas em busca de auxílio com profissionais qualificados.
+
+### Base Styleguide
+
+Utilizamos o [Reactstrap](https://reactstrap.github.io/) para estilização.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Executa o app em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para ver no navegador.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o test runner no modo interativo.\
+Veja mais sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Compila o app para produção na pasta `build`.\
+Veja mais sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 
 ### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Nota: essa operação é irreversível.**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `yarn lint`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Executa o ESLint para identificar e corrigir problemas de código.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contribuição
 
-## Learn More
+Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do repositório e enviar pull requests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Mais Informações
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Aprenda mais na [documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started).\
+Para aprender React, acesse a [documentação do React](https://reactjs.org/).
+
+## Licença
+
+Este projeto é licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.

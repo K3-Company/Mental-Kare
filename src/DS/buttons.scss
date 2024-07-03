@@ -7,4 +7,9 @@
   border-radius: 5px;
   color: $color-white;
   text-decoration: none;
+
+  &:hover {
+    background-color: $color-martinique;
+    color: $color-white;
+  }
 }

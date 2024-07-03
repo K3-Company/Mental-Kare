@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import routes from './routes';
@@ -14,23 +15,25 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header routes={routes} />
-        
-        <main>
-          <Routes>
-            {
-              routes.map((route, i) => {
-                return (
-                  <Route path={route.path} element={route.page} key={i} />
-                )
-              })
-            }
-          </Routes>
-        </main>
+      <HelmetProvider>
+        <Router>
+          <Header routes={routes} />
+          
+          <main>
+            <Routes>
+              {
+                routes.map((route, i) => {
+                  return (
+                    <Route path={route.path} element={route.page} key={i} />
+                  )
+                })
+              }
+            </Routes>
+          </main>
 
-        <Footer routes={routes} />
-      </Router>
+          <Footer routes={routes} />
+        </Router>
+      </HelmetProvider>
     </div>
   );
 }

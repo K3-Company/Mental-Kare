@@ -2,12 +2,7 @@ import React, { ReactElement } from 'react';
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import './Footer.scss';
-
-export interface IRoutes {
-  name: string;
-  path: string;
-  page: ReactElement;
-}
+import { IRoutes } from '../../routes';
 
 export interface IFooter {
   routes: IRoutes[];
@@ -29,7 +24,12 @@ const Footer = (props: IFooter): ReactElement => {
     >
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} lg={4}>
+            <Link to="/">
+              <img className={FooterImageClassName} src="/mentalkare.png" alt="Mental Kare Logo" />
+            </Link>
+          </Col>
+          <Col xs={12} lg={4}>
             <h3>Administradores</h3>
             <ul className={FooterMenuClassName}>
               <li className={FooterMenuItemClassName}>
@@ -52,12 +52,7 @@ const Footer = (props: IFooter): ReactElement => {
               </li>
             </ul>
           </Col>
-          <Col>
-            <Link to="/">
-              <img className={FooterImageClassName} src="/mentalkare.png" alt="Mental Kare Logo" />
-            </Link>
-          </Col>
-          <Col>
+          <Col xs={12} lg={4}>
             <h3>Mapa do site</h3>
             <ul className={FooterMenuClassName}>
               {
